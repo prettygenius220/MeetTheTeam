@@ -1,0 +1,122 @@
+*{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', Calibri;
+    box-sizing: border-box;
+}
+/* styles for the h1 */
+
+ h1{
+    text-align: center;
+    font-size: 30px;
+    margin: 13.2%;
+}
+/* the mother container effects */
+.meettheteam-container{
+    margin:15%;
+    padding: 5%;
+}
+
+:root{
+    --membernamefontsize: 150%;
+    --memberpositioncolor: navy;
+}
+
+/* effects for each member's box */
+.team-details{
+    text-align: center;
+}
+
+.member-name{
+    font-size: var(--membernamefontsize);
+    font-weight: bold;
+    font-family: Calibri;
+}
+
+.member-position{
+    font-size: 70%;
+    color: var(--memberpositioncolor);
+    font-weight: bold;
+}
+
+/* set ayo's position font size */
+#ayo{
+    font-size: 60%;
+}
+
+button{
+    width: 200px;
+    height: 30px;
+    background-color: blue;
+    color: white;
+    font-size: larger;
+    font-family: Calibri;
+    border-radius: 15px;
+    margin-bottom: 83px;
+    outline: none;
+
+}
+
+.member-location{
+    font-family: calibri;
+    font-size: 85%;
+}
+/* set the image border to round */
+img{
+    border-radius: 100%;
+}
+/* make the image glow on hover */
+img:hover{
+    animation-name: glow;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+/* define the animation called glow */
+@keyframes glow {
+    25% {box-shadow: 15px 8px 15px gold;}
+    50% {box-shadow: 15px 8px 15px goldenrod;}
+    55% {box-shadow: 15px 8px 13px rgb(236, 233, 36);}
+    100% {box-shadow: 15px 10px 14px orange;}
+
+}
+
+/* make the button glow on hover */
+button:hover{
+    animation-name: shineBright;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    box-shadow: 3px 5px 4px purple;
+    color: olive;
+}
+
+/* define the animation named shineBright */
+@keyframes shineBright{
+    0% {background: navy;}
+    25% {background: purple;}
+    50% {background: violet;}
+    55% {background: pink;}
+    100% {background: plum;}
+}
+
+/* effects for when the screen is more than 950px */
+@media(min-width:950px){
+    .meettheteam-container{
+        max-width: 1075px;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        margin: 0 9%;
+    }
+
+    .team-details{
+        width: 28.42%;
+    }
+
+    h1{
+        margin-top: 20px;
+        margin-bottom: 28px;
+        font-family: Calibri;
+    }
+}
