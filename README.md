@@ -49,9 +49,9 @@
     font-weight: bold;
 }
 
-/* set ayo's position font size */
-#ayo{
-    font-size: 60%;
+/* set daniel and ayo's position font size */
+#ayo, #daniel{
+    font-size: 50%;
 }
 
 button{
@@ -69,7 +69,7 @@ button{
 
 .member-location{
     font-family: calibri;
-    font-size: 85%;
+    font-size: 70%;
 }
 /* set the image border to round */
 img{
@@ -137,7 +137,7 @@ button:hover{
         <div class="team-details">
             <img src="./images/daniel_headshot.png" alt="Daniel Sumah's picture">
             <p class="member-name">Daniel Sumah</p>
-            <p class="member-position">Founder | Web Development Tutor</p>
+            <p class="member-position" id="daniel">Founder | Web Development Tutor</p>
             <p class="member-location">University of Lagos, Akoka</p>
             <a href="https://www.linkedin.com/mwlite/in/daniel-sumah-44796368" target="_blank"><button>View on LinkedIn</button></a>
         </div>
